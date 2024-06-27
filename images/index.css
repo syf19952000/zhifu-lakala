@@ -1,0 +1,714 @@
+html {
+    overflow: -moz-scrollbars-none;
+    /*注意！若只打 hidden，chrome 的其它 hidden 会出问题*/
+    height: 100%;
+    scrollbar-width: none;
+    font-size: 50px;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    height: 100%;
+    -ms-overflow-style: none;
+    scrollbar-width: none;
+    background-color: rgb(208, 53, 21);
+    overflow-x: hidden;
+}
+.container{
+    width: 100%;
+    height: 100%;
+    display: flex;
+}
+
+.rule,.kefu,.refund{
+    position: fixed;
+    width: 0.5rem;
+    height: 1rem;
+}
+.rule img,.kefu img{
+    width: 0.5rem;
+    height: 1rem;
+}
+.rule{
+    right: 0;
+    top: 1rem;
+}
+
+.kefu{
+    right: 0;
+    top: 2.5rem;
+}
+.refund{
+    right: 0;
+    top: 4rem;
+    width: 0.5rem;
+    height: auto;
+}
+.refund a{
+    padding: .15rem .05rem .15rem .12rem;
+    border-radius: .14rem 0 0 .14rem;
+    border: .03rem solid #ff901a;
+    text-align: center;
+    width: 0.5rem;
+    font-size: .24rem;
+    color: #df412e;
+    background: #fae676;
+    margin-top: .07rem;
+    writing-mode: vertical-lr;
+    font-weight: 700;
+    text-decoration: none;
+}
+.price{
+    position: relative;
+    color: rgb(255, 246, 173);
+    font-size: 0.35rem;
+    font-weight: bold;
+    margin-top: 51%;
+    margin-left: 74%;
+}
+.box_column{
+    display: flex;
+    flex-direction: column;
+}
+.bg{
+    background: url("../images/bg_52.png") no-repeat top;
+    background-size:100% auto;
+    width: 100%;
+    height: 100%;
+    margin: 0 auto;
+}
+.content{
+    position: relative;
+    width: 100%;
+    margin-top: 69%;
+}
+.maoScroll-main{
+    width: 100%;
+    overflow: hidden;
+    height: 22px;
+}
+.maoScroll-main ul, .maoScroll-main li{
+    margin:0;
+    padding: 0;
+    list-style: none;
+    font-size: 0.3rem;
+}
+.maoScroll-main li{
+    width: 90%;
+    margin: 0 auto 1px;
+    height: 22px;
+    line-height: 22px;
+}
+.maoScroll-main li img{
+    width: 22px;
+    height: 22px;
+    border-radius: 50%;
+    vertical-align: middle;
+    margin-right: 0.1rem;
+}
+.maoScroll-main li .text{
+    font-size: 0.25rem;
+    float: right;
+}
+.maoScroll-main li .text .yldj{
+    color: rgb(88, 83, 83);
+}
+.maoScroll-main li .text .chb{
+    color: rgb(234, 51, 35);
+}
+.submit{
+    margin-top: 0.55rem;
+    width: 100%;
+    text-align: center;
+    transform:scale(0.8,0.8);
+    transition:-webkit-transform 500ms ease 0ms, transform 500ms ease 0ms;
+    transform-origin:50% 50% 0px;
+}
+.submit img{width: 85%}
+.my_xing {
+    -webkit-animation-name: xing;
+    -webkit-animation-timing-function: ease-in-out;
+    -webkit-animation-iteration-count: infinite;
+    -webkit-animation-duration: 1s;
+}
+.company{
+    margin-top: 1.5rem;
+    font-size: 0.23rem;
+    text-align: center;
+    color: #ffffff;
+}
+.pop-win{
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    background: rgba(0,0,0,0.5);
+    display: none;
+}
+.rule_content{
+    width: 85%;
+    height: 10.25rem;
+    margin: 3rem auto 0;
+    border-radius: 0.3rem;
+    background: rgb(253, 245, 230);
+    font-size: 0.8rem;
+    overflow: hidden;
+    overflow-y: auto;
+}
+.title{
+    text-align: center;
+    color: rgb(179, 70, 0);
+    font-size: 0.5rem;
+    height: 1rem;
+    line-height: 1rem;
+}
+.cont{
+    font-size: 0.25rem;
+    height: 8rem;
+    overflow-y: auto;
+    line-height: 0.5rem;
+    margin: 0 0.25rem;
+}
+
+.operate{
+    text-align: center;
+    background: #ffffff;
+    height: 1.25rem;
+    padding-top: 0.2rem;
+}
+.operate img{
+    height: 45px;
+}
+
+@keyframes xing {
+    0% {
+        transform: scale(1,1);
+    }
+    50% {
+        transform: scale(0.8,0.8);
+    }
+    100% {
+        transform: scale(1,1);
+    }
+}
+
+/*success*/
+.success{
+    position: absolute;
+    top: 0;
+    right: 0;
+    left: 0;
+    bottom: 0;
+}
+.success_bg{
+    background: url("../images/bg_dj2.png") no-repeat;
+    background-size:cover;
+    width: 100%;
+    height: 16rem;
+    margin: 0 auto;
+}
+/*.app-name {
+    position: absolute;
+    right: 22%;
+    top: 18%;
+    font-size: 0.38rem;
+    color: #ffffff;
+}*/
+
+
+.app-bg2{
+    position: relative;
+    width: 90%;
+    margin: 0 auto;
+    height: 1.5rem;
+    text-align: center;
+    padding-top: 0.2rem;
+    line-height: 0.6rem;
+    border: 5px solid #ffffff;
+    border-radius: 20px;
+    background: #ff0000;
+    margin-top: 2.75rem;
+}
+.goto-video{
+    width: 4.2rem;
+    margin: 0 auto;
+}
+.goto-video img{
+    width: 4.2rem;
+}
+@media screen and (max-width: 369px){
+    .rule_content{
+         width: 85%;
+         height: 10.25rem;
+         margin: 3rem auto 0;
+         border-radius: 0.3rem;
+         background: rgb(253, 245, 230);
+         font-size: 0.8rem;
+         overflow: hidden;
+         overflow-y: auto;
+     }
+}
+@media screen and (min-width: 370px) and (max-width: 380px){
+    .rule_content{
+        width: 85%;
+        height: 9.25rem;
+        margin: 2rem auto 0;
+        border-radius: 0.3rem;
+        background: rgb(253, 245, 230);
+        font-size: 0.8rem;
+        overflow: hidden;
+        overflow-y: auto;
+    }
+    .cont{
+        font-size: 0.25rem;
+        height: 7rem;
+        overflow-y: auto;
+        line-height: 0.5rem;
+        margin: 0 0.25rem;
+    }
+    .success_bg{
+        background-size: contain;
+    }
+    .app-bg2 {
+        margin-top: 2.5rem;
+        border: 4px solid #fff;
+    }
+}
+
+.goto-lottery{
+    width: 5.3rem;
+    margin: 6.1rem auto 0;
+}
+@media screen and (min-width: 400px) and (max-width: 450px){
+    .rule_content{
+        width: 85%;
+        height: 10.25rem;
+        margin: 3rem auto 0;
+        border-radius: 0.3rem;
+        background: rgb(253, 245, 230);
+        font-size: 0.8rem;
+        overflow: hidden;
+        overflow-y: auto;
+    }
+    .goto-lottery{
+        width: 5.3rem;
+        margin: 11.5rem auto 0;
+    }
+}
+
+.goto-lottery img{
+    width: 5.3rem;
+}
+
+.wechat_pay{
+    position: absolute;
+    top: 0;
+    right: 0;
+    left: 0;
+    bottom: 0;
+    text-align: center;
+}
+.wechat_pay p{
+    margin: 0px;
+    padding:0px;
+}
+.wechat_pay .logo{
+    margin-top: 2rem;
+}
+.wechat_pay .logo img{
+    width: 1.7rem;
+    height: 1.7rem;
+}
+.wechat_pay .msg{
+    font-size: 0.4rem;
+}
+.wechat_pay .sure{
+    margin-top: 1rem;
+}
+.wechat_pay .sure button,.wechat_pay .cancel button{
+    width: 3rem;
+    height: 0.9rem;
+    border: none;
+    border-radius: 5px;
+    font-weight: bold;
+    font-size: 0.4rem;
+}
+.wechat_pay .sure button{
+    background: rgb(7, 192, 96);
+    color: #ffffff;
+}
+.wechat_pay .cancel button{
+    color: rgb(7, 192, 96);
+}
+
+.success2{
+    /*display: -webkit-box;
+    display: -webkit-flex;
+    display: flex;*/
+    position: relative;
+    width: 100%;
+    height: 100%;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -webkit-flex-direction: column;
+    flex-direction: column;
+    -webkit-box-pack: center;
+    -webkit-justify-content: center;
+    justify-content: center;
+    text-align: center;
+}
+.success_pay{
+    position: relative;
+    margin: 1.5rem auto 0;
+}
+.success_pay img{ width: 87px;}
+.success_text{
+    font-size: 20px;
+    font-weight: bold;
+}
+.success_tip{
+    font-size: 16px;
+    color: #888;
+    margin-top: 20px;
+}
+.success_mobile{
+    width: 295px;
+    height: 50px;
+    border: 2px solid #cfcfcf;
+    border-radius: 30px;
+    font-size: 16px;
+    color: #333;
+    text-align: center;
+    margin: 90px auto 0;
+    box-sizing: border-box;
+}
+.success_mobile input{
+    outline: none;
+    border: none;
+    padding: 0;
+    margin: 0;
+    text-decoration: inherit;
+    position: relative;
+    display: block;
+    width: 100%;
+    height: 100%;
+    background: none;
+    color: inherit;
+    opacity: 1;
+    font: inherit;
+    line-height: inherit;
+    letter-spacing: inherit;
+    text-indent: inherit;
+    text-transform: inherit;
+    text-shadow: inherit;
+    border:0;
+    text-align: center;
+}
+.success_cj{
+    background: #ff5d3c;
+    width: 295px;
+    height: 50px;
+    border-radius: 30px;
+    font-size: 16px;
+    color: #fff;
+    text-align: center;
+    margin: 15px auto 0;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+}
+
+.van-cell {
+    position: relative;
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: flex;
+    box-sizing: border-box;
+    width: 100%;
+    padding: 10px 16px;
+    overflow: hidden;
+    color: #323233;
+    font-size: 14px;
+    line-height: 24px;
+    background-color: #fff;
+}
+.van-cell--center {
+    -webkit-box-align: center;
+    -webkit-align-items: center;
+    align-items: center;
+}
+.van-cell__title, .van-cell__value {
+    -webkit-box-flex: 1;
+    -webkit-flex: 1;
+    flex: 1;
+}
+.van-cell__value {
+    position: relative;
+    overflow: hidden;
+    color: #969799;
+    text-align: right;
+    vertical-align: middle;
+    word-wrap: break-word;
+}
+.van-cell__value--alone {
+    color: #323233;
+    text-align: left;
+}
+.van-field__value {
+    overflow: visible;
+}
+.van-field__body {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: flex;
+    -webkit-box-align: center;
+    -webkit-align-items: center;
+    align-items: center;
+}
+button, input, textarea {
+    color: inherit;
+    font: inherit;
+    outline: none;
+    border: none;
+    padding: 0;
+    margin: 0;
+    text-decoration: inherit;
+}
+.van-field__control {
+    display: block;
+    box-sizing: border-box;
+    width: 100%;
+    min-width: 0;
+    margin: 0;
+    padding: 0;
+    color: #323233;
+    line-height: inherit;
+    text-align: left;
+    background-color: transparent;
+    border: 0;
+    resize: none;
+}
+.van-field__control--center {
+    -webkit-box-pack: center;
+    -webkit-justify-content: center;
+    justify-content: center;
+    text-align: center;
+}
+
+.van-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 1;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0,0,0,.7);
+}
+.van-loading {
+    position: relative;
+    color: #c8c9cc;
+    font-size: 0;
+    vertical-align: middle;
+}
+.van-loading__spinner {
+    position: relative;
+    display: inline-block;
+    width: 30px;
+    max-width: 100%;
+    height: 30px;
+    max-height: 100%;
+    vertical-align: middle;
+    -webkit-animation: van-rotate .8s linear infinite;
+    animation: van-rotate .8s linear infinite;
+}
+.van-loading__spinner--spinner {
+    -webkit-animation-timing-function: steps(12);
+    animation-timing-function: steps(12);
+}
+
+.van-popup {
+    position: fixed;
+    max-height: 100%;
+    overflow-y: auto;
+    background-color: #fff;
+    -webkit-transition: -webkit-transform .3s;
+    transition: -webkit-transform .3s;
+    transition: transform .3s;
+    transition: transform .3s,-webkit-transform .3s;
+    -webkit-overflow-scrolling: touch;
+}
+.van-popup--center {
+    top: 50%;
+    left: 50%;
+    -webkit-transform: translate3d(-50%,-50%,0);
+    transform: translate3d(-50%,-50%,0);
+}
+.van-popup--center.van-popup--round {
+    border-radius: 16px;
+}
+.app-name {
+    font-size: 0.4rem;
+    color: #ffffff;
+    font-weight: bold;
+}
+.app-name2 {
+    font-size: 0.35rem;
+    color: #ffffff;
+}
+
+.pop-wl{
+    position: fixed;
+    top: 0;
+    right: 0;
+    left: 0;
+    bottom: 0;
+    background: rgba(0,0,0,.7);
+    display: none;
+    align-content: center;
+    flex-wrap: wrap;
+}
+.pop-wl .bg1{
+    width: 80%;
+    margin: 0 auto;
+    height: 6.4rem;
+    background: url("../images/bg_confirm.png") no-repeat;
+    background-size: contain;
+    text-align: center;
+    position: relative;
+}
+.pop-wl .bg1 .text{
+    color: #f42e01;
+    font-size: 1rem;
+    font-weight: 700;
+    font-style: italic;
+    position: absolute;
+    top: 2.8rem;
+    text-align: center;
+    width: 100%;
+}
+.pop-wl .bg1 .submit2{
+    position: absolute;
+    bottom: 0.5rem;
+    /*bottom: -10.2rem;*/
+}
+.submit2 img{
+    width: 80%;
+    left: 10%;
+}
+#pop-price{
+    position: absolute;
+    width: 56%;
+    height: 7%;
+    top: 47%;
+    left: 24%;
+    color: rgb(245, 97, 47);
+    font-size: 0.7rem;
+    font-style: italic;
+    font-weight: bold;
+}
+.close2{
+    height: 30px;
+    display: flex;
+    justify-content: center;
+}
+.close2 img{
+    width: 30px;
+    height: 30px;
+}
+
+.pop-wl .bg2{
+    width: 80%;
+    margin: 0 auto;
+    height: 8.6rem;
+    position: relative;
+}
+.pop-wl .bg2 img{
+    width: 100%;
+}
+.pon-win-1{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+    justify-content: center;
+}
+
+.pay_result_dialog_div {
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    left: 0;
+    top: 0;
+    display: none;
+}
+.pay_result_dialog_div .dialog_bg {
+    background-color: black;
+    width: 100%;
+    height: 100%;
+    opacity: 0.5;
+}
+.pay_result_dialog_div .dialog_content {
+    background-color: white;
+    width: 90%;
+    position: absolute;
+    left: 50%;
+    border-radius: 0.2rem;
+    top: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.pay_result_dialog_div .dialog_content .dialog_title_div {
+    height: 1.5rem;
+    line-height: 1.5rem;
+    text-align: center;
+    font-size: 0.4rem;
+    font-weight: bold;
+}
+
+.pay_result_dialog_div .dialog_content .dialog_content_div {
+    text-align: center;
+    padding: 0 0.3rem 0.3rem 0.3rem;
+}
+
+strong {
+    color: #dd5252;
+    font-weight: normal;
+}
+
+.pay_result_dialog_div .dialog_content .dialog_content_div .selected {
+    background-color: #F32119;
+    margin-bottom: 0.25rem;
+    color: white;
+}
+
+.pay_result_dialog_div .dialog_content .dialog_content_div .dialog_content_btn {
+    height: 1rem;
+    line-height: 1rem;
+    display: block;
+    border: 0.03rem solid #F32119;
+    border-radius: 0.5rem;
+    color: #F32119;
+    font-size: 0.35rem;
+}
+.pay_result_dialog_div .dialog_content .dialog_content_div .selected {
+    background-color: #F32119;
+    margin-bottom: 0.25rem;
+    color: white;
+}
+.buy_nowsfea .p2 {
+    position: absolute;
+    right: 0;
+    top: -0.5rem;
+    background: red;
+    font-size: 0.3rem;
+    height: 0.5rem;
+    line-height: 0.5rem;
+    border-radius: 0.2rem 0.2rem 0.2rem 0;
+    padding: 0 0.2rem;
+    letter-spacing: 0.05rem;
+}
